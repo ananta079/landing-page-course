@@ -19,13 +19,13 @@
     <title>CODEMENG</title>
   </head>
   <body>
-    <section class="px-6 py-3 bg-sky-500">
-      <nav class="flex justify-between">
-        <h3 class="font-medium text-white text-lg">
+    <nav class="bg-sky-300">
+      <div class="container py-3 px-12 mx-auto flex justify-between">
+        <h3 class="font-medium text-white text-xl">
           CODE<span class="font-bold text-slate-900">MENG</span>
         </h3>
 
-        <button class="md:hidden">
+        <button id="menu-btn" class="md:hidden block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -42,33 +42,96 @@
           </svg>
         </button>
 
-        <div class="hidden md:block">
-          <ul class="flex space-x-5 text-base text-white">
-            <a href="" class="hover:font-semibold">Home</a>
-            <a href="" class="hover:font-semibold">Kenapa Kami</a>
-            <a href="" class="hover:font-semibold">Kelas</a>
-            <a href="" class="hover:font-semibold">Ulasan</a>
-          </ul>
+        <div class="hidden md:flex space-x-5">
+          <a href="#home" class="font-bold text-white tracking-wide">Home</a>
+          <a href="#kenapa" class="font-bold text-white tracking-wide"
+            >Kenapa Kami</a
+          >
+          <a href="#kelas" class="font-bold text-white tracking-wide">Kelas</a>
+          <a href="#ulasan" class="font-bold text-white tracking-wide"
+            >Ulasan</a
+          >
         </div>
+      </div>
 
-        <div id="mobile-menu" class="hidden md:hidden">
-          <a href="" class="hover:font-semibold">Home</a>
-          <a href="" class="hover:font-semibold">Kenapa Kami</a>
-          <a href="" class="hover:font-semibold">Kelas</a>
-          <a href="" class="hover:font-semibold">Ulasan</a>
-        </div>
-      </nav>
-    </section>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-sky-100 py-2 px-3 font-semibold"
+      >
+        <a href="" class="hover:font-semibold block mb-1">Home</a>
+        <a href="" class="hover:font-semibold block mb-1">Kenapa Kami</a>
+        <a href="" class="hover:font-semibold block mb-1">Kelas</a>
+        <a href="" class="hover:font-semibold block mb-1">Ulasan</a>
+      </div>
+    </nav>
 
     <!-- HOME SECTION -->
-    <section class="container min-h-screen">
-      <div class="flex flex-col md:flex-row p-4">
-        <div class="w-full mb-6 sm:hidden relative">
-          <img src="img/codemeng2.png" class="rounded-xl" alt="" />
-          <span class="absolute -top-5 -z-10 left-1/6">
+    <section
+      id="home"
+      class="container min-h-screen flex flex-col justify-center items-center md:flex-row p-4 md:px-14 lg:px-28"
+    >
+      <div class="w-full mb-6 md:hidden relative">
+        <img src="img/codemeng2.png" class="rounded-xl" alt="" />
+        <span class="absolute -top-5 -z-10 left-1/6">
+          <svg
+            class="w-[300px] h-[220px] sm:w-[400px] sm:h-[320px]"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#BAE6FF"
+              d="M37.7,-59.1C51.6,-49.8,67.3,-43.9,72.1,-33.1C76.8,-22.2,70.5,-6.5,63.2,5.5C56,17.6,47.8,25.9,39.6,32.8C31.3,39.7,23.1,45.1,12,54.4C1,63.8,-12.8,77.1,-27.7,79.5C-42.6,81.9,-58.7,73.4,-67,60.1C-75.3,46.9,-75.8,28.9,-73.5,13.5C-71.2,-2,-66.1,-14.9,-61.5,-29.3C-56.9,-43.8,-52.8,-59.8,-42.6,-70.8C-32.4,-81.8,-16.2,-87.8,-2.1,-84.5C11.9,-81.2,23.9,-68.5,37.7,-59.1Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <div class="w-full lg:w-1/2">
+        <h1
+          class="text-2xl sm:text-4xl lg:text-5xl font-bold text-slate-800 font-mono"
+        >
+          Sinau Ngoding Lebih Asik Bareng
+        </h1>
+        <div class="flex mt-2 justify-between">
+          <h3
+            class="text-2xl text-blue-500 font-medium sm:text-3xl lg:text-3xl tracking-wide"
+          >
+            CODE<span class="font-bold">MENG ;</span>
+          </h3>
+
+          <a
+            href="#"
+            class="px-4 py-2 hidden bg-blue-400 rounded-full text-white font-medium"
+            >Lihat Kelas</a
+          >
+        </div>
+
+        <p class="my-7 text-base text-slate-600 lg:text-lg">
+          ikuti kelas pemrograman dari codemeng, dan langsung dari praktisi
+          industri, Siap Jadi <span class="font-bold">Programmer?</span>
+        </p>
+
+        <div class="my-7">
+          <a
+            href="#"
+            class="px-4 py-2 border-1 border-blue-500 rounded-full text-slate-700 font-medium hover:bg-blue-400 hover:text-white"
+            >Lihat Kelas</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-blue-400 rounded-full text-white font-medium hover:bg-blue-500"
+            >Gabung Kelas</a
+          >
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/2 hidden md:block">
+        <div class="relative">
+          <img src="img/codemeng2.png" alt="" />
+          <span class="absolute top-2 md:-top-3 left-[15%] -z-10">
             <svg
-              witdh="300"
-              height="220"
+              class="md:w-[300px] md:h-[260px] lg:w-[400px] lg:h-[360px]"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -80,66 +143,143 @@
             </svg>
           </span>
         </div>
-
-        <div class="w-full lg:w-1/2">
-          <h1 class="text-2xl font-bold text-slate-800 font-mono">
-            Sinau Ngoding Lebih Asik Bareng
-          </h1>
-          <div class="flex mt-2 justify-between">
-            <h3 class="text-2xl text-blue-500 font-medium tracking-wide">
-              CODE<span class="font-bold">MENG ;</span>
-            </h3>
-
-            <a
-              href="#"
-              class="px-4 py-2 hidden bg-blue-400 rounded-full text-white font-medium"
-              >Lihat Kelas</a
-            >
-          </div>
-
-          <p class="mt-3 text-base text-slate-600">
-            ikuti kelas pemrograman dari codemeng, dan langsung dari praktisi
-            industri, Siap Jadi <span class="font-bold">Programmer?</span>
-          </p>
-
-          <div class="my-7">
-            <a
-              href="#"
-              class="px-4 py-2 border-1 border-blue-500 rounded-full text-slate-700 font-medium hover:bg-blue-400 hover:text-white"
-              >Lihat Kelas</a
-            >
-            <a
-              href="#"
-              class="px-4 py-2 bg-blue-400 rounded-full text-white font-medium hover:bg-blue-500"
-              >Gabung Kelas</a
-            >
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Kenapa harus codemeng -->
-    <section class="min-h-screen">
-      <div>
-        <h1 class="text-center text-xl font-bold text-slate-800">
-          Kenapa Harus Belajar di CODEMENG?
-        </h1>
+    <section id="kenapa" class="min-h-screen bg-sky-100 pt-10 md:pt-16">
+      <div class="p-5">
+        <div
+          class="md:grid lg:grid-cols-12 md:grid-cols-8 gap-10 md:px-14 lg:px-14"
+        >
+          <div class="lg:col-span-4 px-4">
+            <h1 class="text-xl md:text-3xl font-bold text-slate-800">
+              Kenapa Harus Belajar di CODEMENG?
+            </h1>
+            <img
+              class="w-40 my-4"
+              src="https://image.web.id/images/imagefcac9852434ab485.png"
+              alt="Arrow"
+            />
+          </div>
+          <div class="col-span-4 mb-4 bg-slate-100 p-7 rounded-xl shadow-xl">
+            <div
+              class="w-10 h-10 bg-blue-200 mb-5 flex items-center justify-center rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                />
+                <path
+                  d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                />
+                <path
+                  d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                />
+              </svg>
+            </div>
 
-        <div class="container flex flex-col gap-10 p-4 mt-3">
-          <div class="p-3 bg-slate-100 rounded-lg shadow-xl">
             <h3 class="font-semibold text-lg">Belajar dari Praktisi</h3>
             <p class="text-slate-70 mt-4 text-sm">
               Belajar langsung dari praktisi industri yang berpengalaman.
             </p>
           </div>
-          <div class="p-3 bg-slate-100 rounded-lg shadow-xl">
+          <div class="col-span-4 mb-4 p-7 bg-slate-100 rounded-lg shadow-xl">
+            <div
+              class="w-10 h-10 bg-blue-200 mb-5 flex items-center justify-center rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  d="M11.644 1.59a.75.75 0 0 1 .712 0l9.75 5.25a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.712 0l-9.75-5.25a.75.75 0 0 1 0-1.32l9.75-5.25Z"
+                />
+                <path
+                  d="m3.265 10.602 7.668 4.129a2.25 2.25 0 0 0 2.134 0l7.668-4.13 1.37.739a.75.75 0 0 1 0 1.32l-9.75 5.25a.75.75 0 0 1-.71 0l-9.75-5.25a.75.75 0 0 1 0-1.32l1.37-.738Z"
+                />
+                <path
+                  d="m10.933 19.231-7.668-4.13-1.37.739a.75.75 0 0 0 0 1.32l9.75 5.25c.221.12.489.12.71 0l9.75-5.25a.75.75 0 0 0 0-1.32l-1.37-.738-7.668 4.13a2.25 2.25 0 0 1-2.134-.001Z"
+                />
+              </svg>
+            </div>
             <h3 class="font-semibold text-lg">Materi Lengkap</h3>
             <p class="text-slate-70 mt-4 text-sm">
               Materi lengkap dan up-to-date sesuai dengan perkembangan
               teknologi.
             </p>
           </div>
-          <div class="p-3 bg-slate-100 rounded-lg shadow-xl">
+          <div class="col-span-4 mb-4 p-7 bg-slate-100 rounded-lg shadow-xl">
+            <div
+              class="w-10 h-10 bg-blue-200 mb-5 flex items-center justify-center rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15.75 4.5a3 3 0 1 1 .825 2.066l-8.421 4.679a3.002 3.002 0 0 1 0 1.51l8.421 4.679a3 3 0 1 1-.729 1.31l-8.421-4.678a3 3 0 1 1 0-4.132l8.421-4.679a3 3 0 0 1-.096-.755Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg">Bangun Karier Lewat Karya</h3>
+            <p class="text-slate-70 mt-4 text-sm">
+              Di CODEMENG, kamu didorong untuk bikin project nyata dan membangun
+              portfolio profesional, seperti ratusan member kami lainnya.
+            </p>
+          </div>
+          <div class="col-span-4 mb-4 p-7 bg-slate-100 rounded-lg shadow-xl">
+            <div
+              class="w-10 h-10 bg-blue-200 mb-5 flex items-center justify-center rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z"
+                />
+                <path
+                  d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z"
+                />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg">Gabung Komunitas Aktif</h3>
+            <p class="text-slate-70 mt-4 text-sm">
+              Terhubung ke komunitas dengan 50.000+ member aktif — tempat cari
+              peluang, relasi, dan insight industri.
+            </p>
+          </div>
+          <div class="col-span-4 mb-4 p-7 bg-slate-100 rounded-lg shadow-xl">
+            <div
+              class="w-10 h-10 bg-blue-200 mb-5 flex items-center justify-center rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
             <h3 class="font-semibold text-lg">Sertifikat Resmi</h3>
             <p class="text-slate-70 mt-4 text-sm">
               Dapatkan sertifikat resmi setelah menyelesaikan kelas.
@@ -150,162 +290,172 @@
     </section>
 
     <!-- Kelas CodeMeng -->
-    <section class="min-h-screen">
-      <h1 class="font-bold text-xl text-center">
+    <section id="kelas" class="min-h-screen pt-16">
+      <h1 class="font-bold text-2xl lg:text-4xl text-center font-mono">
         Kelas Coding <span class="text-blue-500">CODEMENG</span>
       </h1>
-      <div class="px-8">
-        <div class="mt-5"></div>
-        <!-- gambar 1 -->
-        <div class="shadow-xl rounded-lg mb-4">
-          <img src="img/html.png" class="rounded-t-lg" alt="" />
-          <div class="p-3">
-            <p class="text-sm text-slate-400">By CODEMENG</p>
-            <h3 class="text-lg font-medium text-slate-800">
-              HTML dan CSS Dasar
-            </h3>
 
-            <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
-              <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
-              <p><i class="fa-solid fa-stopwatch"></i> 2 Jam</p>
-              <p><i class="fa-solid fa-users"></i> 68 Siswa</p>
-              <p><i class="fa-solid fa-book-atlas"></i> 4 Modul</p>
+      <div class="px-8 py-4">
+        <div
+          class="md:grid md:grid-cols-8 lg:gap-7 lg:grid-cols-12 md:px-16 md:my-12"
+        >
+          <div class="shadow-xl mb-6 md:shadow-2xl lg:col-span-4 rounded-lg">
+            <img src="img/html.png" class="rounded-t-lg" alt="" />
+            <div class="p-3">
+              <p class="text-sm text-slate-400">By CODEMENG</p>
+              <h3 class="text-lg font-medium text-slate-800">
+                HTML dan CSS Dasar
+              </h3>
+
+              <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
+                <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
+                <p><i class="fa-solid fa-stopwatch"></i> 2 Jam</p>
+                <p><i class="fa-solid fa-users"></i> 68 Siswa</p>
+                <p><i class="fa-solid fa-book-atlas"></i> 4 Modul</p>
+              </div>
+            </div>
+
+            <div class="border-t mt-5 border-slate-300"></div>
+            <div class="p-3">
+              <div class="flex font-medium justify-between">
+                <span>Beli</span>
+                <span>Gratis</span>
+              </div>
             </div>
           </div>
+          <!-- gambar 2 -->
+          <div class="shadow-xl mb-6 md:shadow-2xl lg:col-span-4 rounded-lg">
+            <img src="img/php.png" class="rounded-t-lg" alt="" />
+            <div class="p-3">
+              <p class="text-sm text-slate-400">By CODEMENG</p>
+              <h3 class="text-lg font-medium text-slate-800">
+                PHP Full Course
+              </h3>
 
-          <div class="border-t mt-5 border-slate-300"></div>
-          <div class="p-3">
-            <div class="flex font-medium justify-between">
-              <span>Beli</span>
-              <span>Gratis</span>
+              <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
+                <p><i class="fa-solid fa-chart-column"></i> Intermediate</p>
+                <p><i class="fa-solid fa-stopwatch"></i> 3 Jam</p>
+                <p><i class="fa-solid fa-users"></i> 22 Siswa</p>
+                <p><i class="fa-solid fa-book-atlas"></i> 2 Modul</p>
+              </div>
+            </div>
+
+            <div class="border-t mt-5 border-slate-300"></div>
+            <div class="p-3">
+              <div class="flex font-medium justify-between">
+                <span>Beli</span>
+                <span>Rp 55.000</span>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- gambar 2 -->
-        <div class="shadow-xl rounded-lg mb-4">
-          <img src="img/php.png" class="rounded-t-lg" alt="" />
-          <div class="p-3">
-            <p class="text-sm text-slate-400">By CODEMENG</p>
-            <h3 class="text-lg font-medium text-slate-800">PHP Full Course</h3>
+          <!-- gambar 3 -->
+          <div class="shadow-xl mb-6 md:shadow-2xl lg:col-span-4 rounded-lg">
+            <img src="img/laravel.png" class="rounded-t-lg" alt="" />
+            <div class="p-3">
+              <p class="text-sm text-slate-400">By CODEMENG</p>
+              <h3 class="text-lg font-medium text-slate-800">Laravel</h3>
 
-            <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
-              <p><i class="fa-solid fa-chart-column"></i> Intermediate</p>
-              <p><i class="fa-solid fa-stopwatch"></i> 3 Jam</p>
-              <p><i class="fa-solid fa-users"></i> 22 Siswa</p>
-              <p><i class="fa-solid fa-book-atlas"></i> 2 Modul</p>
+              <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
+                <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
+                <p><i class="fa-solid fa-stopwatch"></i> 2.5 Jam</p>
+                <p><i class="fa-solid fa-users"></i> 89 Siswa</p>
+                <p><i class="fa-solid fa-book-atlas"></i> 5 Modul</p>
+              </div>
+            </div>
+
+            <div class="border-t mt-5 border-slate-300"></div>
+            <div class="p-3">
+              <div class="flex font-medium justify-between">
+                <span>Beli</span>
+                <span>Rp 102.000</span>
+              </div>
             </div>
           </div>
+          <!-- gambar 4 -->
+          <div class="shadow-xl mb-6 md:shadow-2xl lg:col-span-4 rounded-lg">
+            <img src="img/css.jpg" class="rounded-t-lg" alt="" />
+            <div class="p-3">
+              <p class="text-sm text-slate-400">By CODEMENG</p>
+              <h3 class="text-lg font-medium text-slate-800">Figma Design</h3>
 
-          <div class="border-t mt-5 border-slate-300"></div>
-          <div class="p-3">
-            <div class="flex font-medium justify-between">
-              <span>Beli</span>
-              <span>Rp 55.000</span>
+              <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
+                <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
+                <p><i class="fa-solid fa-stopwatch"></i> 2 Jam</p>
+                <p><i class="fa-solid fa-users"></i> 40 Siswa</p>
+                <p><i class="fa-solid fa-book-atlas"></i> 2 Modul</p>
+              </div>
+            </div>
+
+            <div class="border-t mt-5 border-slate-300"></div>
+            <div class="p-3">
+              <div class="flex font-medium justify-between">
+                <span>Beli</span>
+                <span>Rp 79.000</span>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- gambar 3 -->
-        <div class="shadow-xl rounded-lg mb-4">
-          <img src="img/laravel.png" class="rounded-t-lg" alt="" />
-          <div class="p-3">
-            <p class="text-sm text-slate-400">By CODEMENG</p>
-            <h3 class="text-lg font-medium text-slate-800">Laravel</h3>
+          <!-- gambar 5 -->
+          <div class="shadow-xl mb-6 md:shadow-2xl lg:col-span-4 rounded-lg">
+            <img src="img/OSINT.png" class="rounded-t-lg" alt="" />
+            <div class="p-3">
+              <p class="text-sm text-slate-400">By CODEMENG</p>
+              <h3 class="text-lg font-medium text-slate-800">
+                OSINT untuk Keamanan Siber
+              </h3>
 
-            <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
-              <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
-              <p><i class="fa-solid fa-stopwatch"></i> 2.5 Jam</p>
-              <p><i class="fa-solid fa-users"></i> 89 Siswa</p>
-              <p><i class="fa-solid fa-book-atlas"></i> 5 Modul</p>
+              <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
+                <p><i class="fa-solid fa-chart-column"></i> Intermediate</p>
+                <p><i class="fa-solid fa-stopwatch"></i> 4 Jam</p>
+                <p><i class="fa-solid fa-users"></i> 21 Siswa</p>
+                <p><i class="fa-solid fa-book-atlas"></i> 10 Modul</p>
+              </div>
+            </div>
+
+            <div class="border-t mt-5 border-slate-300"></div>
+            <div class="p-3">
+              <div class="flex font-medium justify-between">
+                <span>Beli</span>
+                <span>Rp 199.000</span>
+              </div>
             </div>
           </div>
+          <!-- gambar 6 -->
+          <div class="shadow-xl mb-6 md:shadow-2xl lg:col-span-4 rounded-lg">
+            <img src="img/Belajar_GIT_Dasar.png" class="rounded-t-lg" alt="" />
+            <div class="p-3">
+              <p class="text-sm text-slate-400">By CODEMENG</p>
+              <h3 class="text-lg font-medium text-slate-800">Git Dasar</h3>
 
-          <div class="border-t mt-5 border-slate-300"></div>
-          <div class="p-3">
-            <div class="flex font-medium justify-between">
-              <span>Beli</span>
-              <span>Rp 102.000</span>
+              <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
+                <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
+                <p><i class="fa-solid fa-stopwatch"></i> 2 Jam</p>
+                <p><i class="fa-solid fa-users"></i> 109 Siswa</p>
+                <p><i class="fa-solid fa-book-atlas"></i> 2 Modul</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- gambar 4 -->
-        <div class="shadow-xl rounded-lg mb-4">
-          <img src="img/css.jpg" class="rounded-t-lg" alt="" />
-          <div class="p-3">
-            <p class="text-sm text-slate-400">By CODEMENG</p>
-            <h3 class="text-lg font-medium text-slate-800">Figma Design</h3>
 
-            <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
-              <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
-              <p><i class="fa-solid fa-stopwatch"></i> 2 Jam</p>
-              <p><i class="fa-solid fa-users"></i> 40 Siswa</p>
-              <p><i class="fa-solid fa-book-atlas"></i> 2 Modul</p>
-            </div>
-          </div>
-
-          <div class="border-t mt-5 border-slate-300"></div>
-          <div class="p-3">
-            <div class="flex font-medium justify-between">
-              <span>Beli</span>
-              <span>Rp 79.000</span>
-            </div>
-          </div>
-        </div>
-        <!-- gambar 5 -->
-        <div class="shadow-xl rounded-lg mb-4">
-          <img src="img/OSINT.png" class="rounded-t-lg" alt="" />
-          <div class="p-3">
-            <p class="text-sm text-slate-400">By CODEMENG</p>
-            <h3 class="text-lg font-medium text-slate-800">
-              OSINT untuk Keamanan Siber
-            </h3>
-
-            <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
-              <p><i class="fa-solid fa-chart-column"></i> Intermediate</p>
-              <p><i class="fa-solid fa-stopwatch"></i> 4 Jam</p>
-              <p><i class="fa-solid fa-users"></i> 21 Siswa</p>
-              <p><i class="fa-solid fa-book-atlas"></i> 10 Modul</p>
-            </div>
-          </div>
-
-          <div class="border-t mt-5 border-slate-300"></div>
-          <div class="p-3">
-            <div class="flex font-medium justify-between">
-              <span>Beli</span>
-              <span>Rp 199.000</span>
-            </div>
-          </div>
-        </div>
-        <!-- gambar 6 -->
-        <div class="shadow-xl rounded-lg mb-4">
-          <img src="img/Belajar_GIT_Dasar.png" class="rounded-t-lg" alt="" />
-          <div class="p-3">
-            <p class="text-sm text-slate-400">By CODEMENG</p>
-            <h3 class="text-lg font-medium text-slate-800">Git Dasar</h3>
-
-            <div class="grid grid-cols-2 gap-y-1 text-sm mt-1 text-slate-600">
-              <p><i class="fa-solid fa-chart-column"></i> Beginner</p>
-              <p><i class="fa-solid fa-stopwatch"></i> 2 Jam</p>
-              <p><i class="fa-solid fa-users"></i> 109 Siswa</p>
-              <p><i class="fa-solid fa-book-atlas"></i> 2 Modul</p>
-            </div>
-          </div>
-
-          <div class="border-t mt-5 border-slate-300"></div>
-          <div class="p-3">
-            <div class="flex font-medium justify-between">
-              <span>Beli</span>
-              <span>Gratis</span>
+            <div class="border-t mt-5 border-slate-300"></div>
+            <div class="p-3">
+              <div class="flex font-medium justify-between">
+                <span>Beli</span>
+                <span>Gratis</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <h4
+        class="text-center text-blue-400 text-xl font-medium mb-4 cursor-pointer"
+      >
+        Lihat Selengkapnya....
+      </h4>
     </section>
 
     <!-- Ulasan Sestion -->
-    <section class="min-h-screen mt-9 pt-9 bg-blue-100">
-      <div class="container mx-auto px-4">
-        <h1 class="font-bold text-xl text-center mb-6">
-          Apa Kata Member CODEMENG?
+    <section id="ulasan" class="min-h-screen pt-16 bg-sky-100">
+      <div class="container mx-auto px-4 md:px-16 pb-8">
+        <h1 class="font-bold text-xl md:text-3xl text-center mb-10">
+          Apa Yang Sudah Mereka Dapatkan di CODEMENG?
         </h1>
 
         <div class="relative">
@@ -316,7 +466,7 @@
               <div class="swiper-slide">
                 <div class="p-5 bg-white h-68 rounded-lg ulasan">
                   <img src="img/people.png" class="w-20" alt="" />
-                  <h3 class="font-medium text-slate-600 text-lg mt-2 mb-4">
+                  <h3 class="font-medium text-slate-600 text-lg mt-2">
                     Windya
                   </h3>
                   <div style="color: #ffd700; font-size: 15px">
@@ -415,6 +565,26 @@
                   </p>
                 </div>
               </div>
+              <!--  -->
+              <div class="swiper-slide">
+                <div class="p-5 bg-white h-68 rounded-lg ulasan">
+                  <img src="img/people.png" class="w-20" alt="" />
+                  <h3 class="font-medium text-slate-600 text-lg mt-2 mb-4">
+                    Dinda dwi
+                  </h3>
+                  <div style="color: #ffd700; font-size: 15px">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <!-- <i class="fa-solid fa-star-half-stroke"></i> -->
+                  </div>
+                  <p class="text-base text-slate-800 mt-1">
+                    "Cocok untuk pemula yang ingin mulai dari 0"
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -422,13 +592,40 @@
     </section>
 
     <!-- footer section -->
-    <section class="py-10 bg-slate-100">
-      <div class="my-7">
-        <h3>COMPANY</h3>
+
+    <footer>
+      <div class="flex-row py-8 md:flex md:gap-8 md:px-16 md:my-6">
+        <div class="px-4">
+          <h3 class="font-semibold text-base mb-1">COMPANY</h3>
+          <p class="text-slate-600 hover:text-black">About Us</p>
+          <p class="text-slate-600 hover:text-black">Blogs</p>
+          <p class="text-slate-600 hover:text-black">Events</p>
+        </div>
+        <div class="py-3"></div>
+        <div class="px-4">
+          <h3 class="font-semibold text-base mb-1">LEGAL</h3>
+          <p class="text-slate-600 hover:text-black">Terms & Conditions</p>
+          <p class="text-slate-600 hover:text-black">Privacy Policy</p>
+          <p class="text-slate-600 hover:text-black">Feedback</p>
+        </div>
+        <div class="border-t border-slate-300 my-4"></div>
       </div>
-    </section>
+
+      <p class="p-4 text-center text-slate-500">
+        &copy 2025 CODEMENG. All rights reserved. Made with ❤️ in Indonesia.
+      </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
 
     <script>
       const swiper = new Swiper(".swiper", {
